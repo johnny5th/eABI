@@ -13,8 +13,7 @@ except without the ajax, and includes a resize listener and a function callback.
 
 The function eABI appends data to an element once a certain condition is met.
 ####For example
-`
-$('#foo').eABI({
+```$('#foo').eABI({
 	'data' : 'This is a test',
 	
 	condition : function(){
@@ -24,8 +23,7 @@ $('#foo').eABI({
 	callback: function(){
 		alert('It Works!')
 	}
-});
-`
+});```
 
 If the condition is met on load, the data will be appended to the chosen selector,
 and then the callback will be run. If the condition is NOT met, a resize() listener
