@@ -16,7 +16,7 @@
 			// Check condition on load
 			if(settings.condition() == true){
 				
-				$this.append(data);
+				$this.append(settings.data);
 				
 				$this.addClass('activecontent');
 				
@@ -27,7 +27,7 @@
 				// Check for the condition on page resize
 				$(window).resize(function() {
 					if(!$this.hasClass('activecontent') && settings.condition()){
-						$this.append(data);
+						$this.append(settings.data);
 						
 						$this.addClass('activecontent');
 						
