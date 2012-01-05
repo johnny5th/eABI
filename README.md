@@ -1,7 +1,6 @@
-#eABI
-##Element Attribute Based DOM Injection.
+#eABI - Element Attribute Based DOM Injection.
 
-###What is it?
+##What is it?
 
 eABI allows you to dynamically drop in content based on a javascript condition.
 I created eABI to drop in extra content on content-first media-query based webpages
@@ -14,7 +13,8 @@ except without the ajax, and includes a resize listener and a function callback.
 
 The function eABI appends data to an element once a certain condition is met.
 ####For example
-`$('#foo').eABI({
+`
+$('#foo').eABI({
 	'data' : 'This is a test',
 	
 	condition : function(){
@@ -24,7 +24,8 @@ The function eABI appends data to an element once a certain condition is met.
 	callback: function(){
 		alert('It Works!')
 	}
-});'
+});
+'
 
 If the condition is met on load, the data will be appended to the chosen selector,
 and then the callback will be run. If the condition is NOT met, a resize() listener
