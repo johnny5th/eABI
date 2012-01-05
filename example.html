@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="eABI.jquery.js"></script>
+
+<style>
+	#foo{
+		display:none;
+	}
+	
+	@media only screen and (min-width: 680px) {
+		#foo{
+			display:block;
+		}	
+	}
+</style>
+
+</head>
+
+<body>
+<h1>eABI Test</h1>
+
+<div id="foo">
+	<script>
+	
+	var data = 'TEST DATA! THIS WORKS!';
+	
+	$('#foo').eABI({
+		'data' : data,
+		
+		condition : function(){
+			return $('#foo').css('display') == 'block';	
+		},
+		
+		callback: function(){
+			alert('It Works!')
+		}
+	});
+	
+	</script>
+</div>
+</body>
+</html>
