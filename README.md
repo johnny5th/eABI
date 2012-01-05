@@ -1,4 +1,4 @@
-#eABI - Element Attribute Based DOM Injection
+#eABI for jQuery - Element Attribute Based DOM Injection
 
 ##What is it?
 
