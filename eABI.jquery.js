@@ -22,18 +22,20 @@
 				
 				settings.callback();
 				
-			}
+			}else{
 			
-			// Check for the condition on page resize
-			$(window).resize(function() {
-				if(!$this.hasClass('activecontent') && settings.condition()){
-					$this.append(data);
-					
-					$this.addClass('activecontent');
-					
-					settings.callback();
-				}
-			});
+				// Check for the condition on page resize
+				$(window).resize(function() {
+					if(!$this.hasClass('activecontent') && settings.condition()){
+						$this.append(data);
+						
+						$this.addClass('activecontent');
+						
+						settings.callback();
+					}
+				});
+				
+			}
 			
 		});
 	
