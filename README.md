@@ -1,4 +1,4 @@
-#eABI - Element Attribute Based DOM Injection.
+#eABI - Element Attribute Based DOM Injection
 
 ##What is it?
 
@@ -25,7 +25,7 @@ $('#foo').eABI({
 		alert('It Works!')
 	}
 });
-'
+`
 
 If the condition is met on load, the data will be appended to the chosen selector,
 and then the callback will be run. If the condition is NOT met, a resize() listener
